@@ -53,8 +53,4 @@
     .contenedor-banner {
         border-radius: 0px;
     }
-    #sup {
-        width: 90%;margin: 0 auto;min-width:500px;max-width: none;
-        margin: 0;
-    }
 }
