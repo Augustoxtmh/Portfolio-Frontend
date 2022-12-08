@@ -1,0 +1,84 @@
+<hr>
+<div class="container">
+    <h3 class="title-section">Habilidades</h3>
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <div class="container header">
+                <h4>Front-End</h4> 
+                <a *ngIf="isLogged" (click)="openNewFrontSkillDialog()"><i class="fa fa-plus"></i></a>
+            </div>
+            <div *ngIf="frontendSkillsData[0] == null" class="no-info-message">
+                <p>¡Oops! No hay información sobre tus habilidades frontend por aquí...</p>
+            </div>
+            <div class="item-progress" *ngFor="let skill of frontendSkillsData">
+                <div class="row">
+                    <div class="col">
+                        <h5><img [src]="skill.icono"> {{skill.nombre}}</h5>
+                    </div>
+                    <div class="col icons-edit">    
+                            <a *ngIf="isLogged" (click)="openEditFrontSkillDialog(skill)"><i class="fa fa-pen"></i></a>
+                    </div>
+                </div>
+                  <div class="progress">  
+                    <div class="progress-bar bg-success" role="progressbar" [ngStyle]="{'width':skill.progreso + '%'}" aria-valuemin="0" aria-valuemax="100">
+                        <div *ngIf="skill.progreso < 40">Básico</div>
+                        <div *ngIf="skill.progreso > 40 && skill.progreso < 70">Intermedio</div>
+                        <div *ngIf="skill.progreso > 70"> Avanzado</div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <div class="container header">
+                <h4>Back-End</h4> 
+                <a *ngIf="isLogged" (click)="openNewBackSkillDialog()"><i class="fa fa-plus"></i></a>
+            </div>
+            <div *ngIf="backendSkillsData[0] == null" class="no-info-message">
+                <p>¡Oops! No hay información sobre tus habilidades backend por aquí...</p>
+            </div>
+            <div class="item-progress" *ngFor="let skill of backendSkillsData">
+                <div class="row">
+                    <div class="col">
+                        <h5><img [src]="skill.icono"> {{skill.nombre}}</h5>
+                    </div>
+                    <div class="col icons-edit">    
+                            <a *ngIf="isLogged" (click)="openEditBackSkillDialog(skill)"><i class="fa fa-pen"></i></a>
+                    </div>
+                </div>
+                  <div class="progress">  
+                    <div class="progress-bar bg-success" role="progressbar" [ngStyle]="{'width':skill.progreso + '%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div *ngIf="skill.progreso < 40">Básico</div>
+                        <div *ngIf="skill.progreso > 40 && skill.progreso < 70">Intermedio</div>
+                        <div *ngIf="skill.progreso > 70"> Avanzado</div>
+                    </div>
+                  </div>
+            </div>     
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <div class="container header">
+                <h4>Otras habilidades</h4> 
+                <a *ngIf="isLogged" (click)="openNewOtraSkillDialog()"><i class="fa fa-plus"></i></a>
+            </div>
+            <div *ngIf="otrasSkillsData[0] == null" class="no-info-message">
+                <p>¡Oops! No hay información sobre tus otras habilidades por aquí...</p>
+            </div>
+            <div class="item-progress" *ngFor="let skill of otrasSkillsData">
+                <div class="row">
+                    <div class="col">
+                        <h5><img [src]="skill.icono"> {{skill.nombre}}</h5>
+                    </div>
+                    <div class="col icons-edit">    
+                            <a *ngIf="isLogged" (click)="openEditOtraSkillDialog(skill)"><i class="fa fa-pen"></i></a>
+                    </div>
+                </div>
+                  <div class="progress">  
+                    <div class="progress-bar bg-success" role="progressbar" [ngStyle]="{'width':skill.progreso+ '%'} " aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div *ngIf="skill.progreso < 40">Básico</div>
+                        <div *ngIf="skill.progreso > 40 && skill.progreso < 70">Intermedio</div>
+                        <div *ngIf="skill.progreso > 70"> Avanzado</div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

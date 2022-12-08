@@ -1,0 +1,23 @@
+<div class="container-fluid info-section">
+    <div class="container">
+        <h2 class="title-section header">Educación <a *ngIf="isLogged" (click)="openDialog()"><i class="fa fa-plus"></i></a></h2>
+        
+        <div *ngIf="educacion[0] == null" class="no-info-message">
+            <p>¡Oops! No hay información sobre tu educación por aquí...</p>
+        </div>
+        <div class="row" *ngFor="let edu of educacion">
+            <div class="col-sm-6 col-lg-2 img">
+                <img [src]="edu.logo_educacion">
+            </div>
+            <div class="col">
+                <h4>{{edu.nombre}}</h4>
+                    <div class="icons-edit">
+                        <a *ngIf="isLogged" (click)="openEditDialog(edu)" class="fa fa-pen rounded float-end"></a>
+                    </div>
+                <p class="period">{{edu.periodo}}</p>
+                <p class="work-description">{{edu.descripcion}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
