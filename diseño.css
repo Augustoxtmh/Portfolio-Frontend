@@ -1,31 +1,3 @@
-#arg {
-    font-size: 55%;
-    margin-top: 15px;
-    margin-left: 10px;
-    width: 15%;
-    padding-left: -20px;
-}
-
-
-#gmail {
-    font-size: 90%;
-    margin-right: 5%;
-    padding: 3px;
-    border-radius: 5px;
-}
-
-#sup {
-    width: 100%;margin: 0 auto;min-width:440px;max-width: none;
-}
-
-#imagen {
-    max-width: 3rem;    
-}
-
-.container-fluid {
-    margin-bottom: -15px;
-    margin-top: -15px;
-}
 
 #Inicio {
     font-size: 70%;

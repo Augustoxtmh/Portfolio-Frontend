@@ -1,3 +1,42 @@
+#arg {
+    font-size: 70%;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 17%;
+    padding-left: -20px;
+}
+
+
+#gmail {
+    font-size: 90%;
+    margin-right: 5%;
+    padding: 3px;
+    border-radius: 5px;
+}
+
 #sup {
     width: 100%;margin: 0 auto;min-width:440px;max-width: none;
+}
+
+#imagen {
+    max-width: 3rem;    
+}
+
+.container-fluid {
+    margin-bottom: -15px;
+    margin-top: -15px;
+}
+
+@media (max-width: 500px) {
+    #arg {
+        font-size: 70%;
+        margin-top: 10px;
+        margin-left: 15px;
+        width: 17%;
+        padding-left: -20px;
+    }
+    #sup {
+        width: 90%;margin: 0 auto;min-width:500px;max-width: none;
+        margin: 0;
+    }
 }
