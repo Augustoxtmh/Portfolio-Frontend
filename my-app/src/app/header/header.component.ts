@@ -5,8 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
+
 export class HeaderComponent implements OnInit {
-  nombre = "Juan Augusto";
+  habil_bot = false;
+  NombreCreado(value:String){
+    this.habil_bot = true
+  }
+
 
   constructor() { }
 

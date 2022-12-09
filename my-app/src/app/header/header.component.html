@@ -14,5 +14,7 @@
               </form>
           </div>
       </header>
-      <h1>Nombre: {{nombre=="Juan August" ? "Pedro": "Alberto"}}</h1>
+      <input type="text" #nombrei [disabled]="habil_bot">
+      <input type="button" value ="Darle" (click)="NombreCreado(nombrei.value)">
+      <h1>Nombre: {{nombrei.value=="Juan August" ? "Pedro": "Alberto"}}</h1>
 </div>
