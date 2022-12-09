@@ -7,11 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HeaderComponent implements OnInit {
-  habil_bot = false;
-  NombreCreado(value:String){
-    this.habil_bot = true
-  }
-
+  nombrei = "Juan August";
 
   constructor() { }
 

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,8 +11,7 @@ import { HeaderComponent } from './header/header.component';
     AppComponent, HeaderComponent
    ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule,AppRoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
