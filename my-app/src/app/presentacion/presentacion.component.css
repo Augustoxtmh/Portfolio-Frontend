@@ -1,0 +1,29 @@
+.contenedor-banner {
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+#imagen {
+    max-width: 3rem;    
+}
+#bner {
+    position: absolute fixed;
+    display: block;
+    z-index: -1;
+    width: 100%;
+    border-start-end-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#foto_perf {
+    position: absolute fixed;
+    display: block;
+    z-index: 1;
+    width: 20%;
+    margin-top: -10%;
+}
+
+#presentacion {
+    text-align: center;
+    margin-top: -10%;
+}
