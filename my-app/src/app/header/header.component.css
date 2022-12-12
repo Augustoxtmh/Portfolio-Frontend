@@ -1,42 +1,50 @@
-#arg {
+.item {
     font-size: 70%;
-    margin-top: 10px;
-    margin-left: 15px;
-    width: 17%;
+    margin: 0;
     padding-left: -20px;
 }
 
-#Inicio {
-    font-size: 70%;
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
 }
 
-#gmail {
-    font-size: 90%;
-    margin-right: 5%;
-    padding: 3px;
-    border-radius: 5px;
-}
-
-#sup {
-    width: 100%;margin: 0 auto;min-width:500px;max-width: none;
+#item-arg{
     margin: 0;
 }
 
-#imagen {
-    max-width: 3rem;    
+.navbar p {
+    float: left;
+    display: block;
+    color: #f2f2f2;
 }
 
-.container-fluid {
-    margin-bottom: -15px;
-    margin-top: -15px;
+.navbar p:hover {
+    background: #ddd;
+    color: black;
 }
 
-@media (max-width: 500px) {
-    #arg {
-        font-size: 70%;
-        margin-top: 10px;
-        margin-left: 15px;
-        width: 17%;
-        padding-left: -20px;
+.btn {
+    margin: 0 25px 0;
+}
+
+@media (max-width: 450px) {
+    .nav-btn{
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .nav-btn{
+        display: none;
+    }
+}
+
+@media (max-width: 230px) {
+    #item-arg{
+        display: none;
     }
 }

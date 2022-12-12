@@ -27,3 +27,29 @@
     text-align: center;
     margin-top: -10%;
 }
+
+.contenedor-base{
+    margin-top: 80px;
+}
+
+@media (max-width: 450px) {
+    #foto_perf {
+        position: relative;
+        display: none;
+    }
+    #presentacion {
+        margin-top: 0;
+    }
+
+    .contenedor-banner {
+        border-radius: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media (max-width: 500px) {
+
+    .contenedor-banner {
+        border-radius: 0px;
+        padding-bottom: 0px;
+    }
+}
