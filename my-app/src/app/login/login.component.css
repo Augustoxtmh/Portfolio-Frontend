@@ -1,0 +1,13 @@
+
+.contenedor-base{
+    border-radius: 3px;
+}
+.btn-success{
+    width: 100%;
+}
+.btn-primary{
+    margin-bottom: 30px;
+}
+body{
+    min-height: 100vh;
+}

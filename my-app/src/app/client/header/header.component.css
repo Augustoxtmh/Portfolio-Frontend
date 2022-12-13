@@ -1,0 +1,51 @@
+.item {
+    font-size: 70%;
+    margin: 0;
+    padding-left: -20px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+}
+
+#item-arg{
+    margin: 0;
+    color: #f2f2f2;
+}
+
+.navbar p {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+}
+
+.navbar p:hover {
+    background: #ddd;
+    color: black;
+}
+
+.btn {
+    margin: 0 25px 0;
+}
+
+@media (max-width: 450px) {
+    .nav-btn{
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .nav-btn{
+        display: none;
+    }
+}
+
+@media (max-width: 230px) {
+    #item-arg{
+        display: none;
+    }
+}

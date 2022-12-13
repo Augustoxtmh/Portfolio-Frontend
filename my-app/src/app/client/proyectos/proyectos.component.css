@@ -1,0 +1,13 @@
+.proy-cont {
+    width: 95%;
+    text-align: left;
+    text-align: justify;
+    padding-left: 5%;
+}
+.proy-boton {
+    background-color: burlywood;
+    border: 1px solid;
+    border-radius: 7px;
+    margin-bottom: 7.5%;
+    
+}
