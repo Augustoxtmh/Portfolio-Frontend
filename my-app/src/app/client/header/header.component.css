@@ -32,6 +32,10 @@
     margin: 0 25px 0;
 }
 
+li{
+    list-style: none;
+}
+
 @media (max-width: 450px) {
     .nav-btn{
         display: none;

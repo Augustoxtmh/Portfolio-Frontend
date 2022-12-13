@@ -22,6 +22,10 @@
     align-items:center;
 }
 
+li{
+    list-style: none;;
+}
+
 .h1exp {
 
     margin-left: 5%;

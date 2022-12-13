@@ -7,12 +7,14 @@
     max-width: 3rem;    
 }
 #bner {
-    position: absolute fixed;
-    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     z-index: -1;
     width: 100%;
     border-start-end-radius: 10px;
     border-top-left-radius: 10px;
+    max-height: 400px;
 }
 
 #foto_perf {
