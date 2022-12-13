@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-
+  usuario(){
+    alert("iniciadosas")
+  }
   ngOnInit() {
   }
 
