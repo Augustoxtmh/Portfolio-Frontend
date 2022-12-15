@@ -5,14 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { ClientModule } from "./client/client.module";
-import { AdminModule } from './admin/admin.module';
+import { ClientModule } from "./client-module/client.module";
+import { AdminModule } from './admin-module/admin.module';
 import { Error404Component } from './error404/error404.component';
+import { ContactarComponent } from './contactar/contactar.component';
 
 @NgModule({
-    declarations: [	
+    declarations: [		
         AppComponent, LoginComponent,
-      Error404Component
+        Error404Component, ContactarComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

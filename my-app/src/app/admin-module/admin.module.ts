@@ -8,17 +8,18 @@ import { PresentacionComponent } from './presentacion/presentacion.component';
 import { ExperienciasComponent } from './experiencias/experiencias.component';
 import { HeaderComponent } from './header/header.component';
 import { AdminComponent } from './admin.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [AdminComponent, ConocimientosComponent, EducacionComponent, PresentacionComponent, ExperienciasComponent,
-      HeaderComponent, ProyectosComponent],
+      HeaderComponent, ProyectosComponent, FooterComponent],
 
     imports: [
         CommonModule
     ],
     exports:[
       AdminComponent, ConocimientosComponent, EducacionComponent, PresentacionComponent, ExperienciasComponent,
-      HeaderComponent, ProyectosComponent
+      HeaderComponent, ProyectosComponent, FooterComponent
     ]
 })
 export class AdminModule { }
