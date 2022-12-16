@@ -24,3 +24,9 @@
 .progress{
     height: 21px;
 }
+
+@media (max-width: 190px) {
+    #h1conocimiento{
+        font-size: large;
+    }
+}

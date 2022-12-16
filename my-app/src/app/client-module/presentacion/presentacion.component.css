@@ -14,7 +14,7 @@
     width: 100%;
     border-start-end-radius: 10px;
     border-top-left-radius: 10px;
-    max-height: 400px;
+    max-height: 300px;
 }
 
 #foto_perf {
@@ -42,7 +42,7 @@
     #presentacion {
         margin-top: 0;
     }
-
+    
     .contenedor-banner {
         border-radius: 0px;
         padding-bottom: 0px;
@@ -53,5 +53,10 @@
     .contenedor-banner {
         border-radius: 0px;
         padding-bottom: 0px;
+    }
+}
+@media (max-width: 300px) {
+    .imagen {
+        display: none;
     }
 }
