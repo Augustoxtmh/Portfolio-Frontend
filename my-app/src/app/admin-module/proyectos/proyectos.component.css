@@ -4,6 +4,11 @@
     text-align: justify;
     padding-left: 5%;
 }
+
+.col-12{
+    text-align: center;
+}
+
 .proy-boton {
     background-color: burlywood;
     border: 1px solid;

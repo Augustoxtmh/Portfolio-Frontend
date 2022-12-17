@@ -6,11 +6,11 @@ import { ContactarComponent } from './contactar/contactar.component';
 import { Error404Component } from './error404/error404.component';
 import { LoginComponent } from './login/login.component';
 
-const routes: Routes = [{path: '', redirectTo: '/inicio', pathMatch: 'full'},
-{path: 'inicio', component: ClientComponent}, 
-{path: "login", component: LoginComponent},
-{path: "edit", component: AdminComponent},
-{path: "contactar", component: ContactarComponent},
+const routes: Routes = [{path: '', redirectTo: '/Home', pathMatch: 'full'},
+{path: 'Home', component: ClientComponent}, 
+{path: "Login", component: LoginComponent},
+{path: "Edit", component: AdminComponent},
+{path: "Contactar", component: ContactarComponent},
 {path: '**', component: Error404Component}];
 
 @NgModule({

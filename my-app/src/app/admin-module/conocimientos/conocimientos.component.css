@@ -24,3 +24,13 @@
 .progress{
     height: 21px;
 }
+
+.col-12{
+    text-align: center;
+}
+
+@media (max-width: 190px) {
+    #h1conocimiento{
+        font-size: large;
+    }
+}

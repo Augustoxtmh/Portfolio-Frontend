@@ -1,0 +1,9 @@
+.col-12{
+    text-align: center;
+}
+
+@media (max-width: 250px) {
+    .h1exp{
+        font-size: large;
+    }
+}
