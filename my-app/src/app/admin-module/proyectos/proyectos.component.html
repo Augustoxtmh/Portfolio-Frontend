@@ -2,15 +2,25 @@
     <!--Zona Proyectos-->
     <h1 class="h1exp">Proyectos</h1>
     <div class="proy-cont">
-        <h4>Portfolio Web</h4>
-  
-        <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero laborum harum neque quaerat ea illo fuga animi in rem molestias beatae numquam at velit, esse sit repellat assumenda est. Nisi.</h6>
-  
-        <button class="proy-boton">Visitar</button>
-    </div>
-    <div class="row dec-row">
-        <div class="col-12"> 
-            <button class="btn btn-success">Nuevo Item</button> 
+        
+        <div class="row dec-row" *ngFor="let item of items;">
+        
+            <div class="col-12 py-3"> <input placeholder="Titulo" type="text" maxlength="20"></div>
+
+            <div class="col-12"> <input type="text" placeholder="Descripción" maxlength="300" style="width: 100%;"> </div>
+            
+            <div class="col-12 py-3"><input type="url" placeholder="Url visita o codigo"></div>
+
+            <div class="col-6 btn-editar"> <button class="btn btn-success">Editar</button> </div>
+            <div class="col-6"> <button class="btn btn-danger">Eliminar</button> </div>
+            
         </div>
-    </div>
+
+        <div class="row dec-row">
+            <div class="col-12 btn-item"> 
+                <button class="btn btn-success" (click)="nuevoItem()" >Nuevo Item</button> 
+            </div>
+        </div>
+    </div>  
+
   </div>

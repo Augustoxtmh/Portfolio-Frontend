@@ -1,19 +1,23 @@
 <div class="bord_exp contenedor-base contenedor-exp" id="educacion">
     <h1 class="h1exp">Educación recibida</h1>
 
-        <div class="row dec-row">
+    <div class="row dec-row" *ngFor="let item of items;">
         
-            <div class="col-2"> <img src="https://static.acaula.com.ar/center/AR/1328-instituto-argentino-de-estudios-superiores-iaes-9a28a03e-7797-4fc3-a1f2-8e7bdda79d1a-logo-200x200.png" alt="Logo Educación" class="img-fluid"></div>
-            
-            <div class="col-8"> <h5 class="h5-exp">IAES</h5> <h6 class="h6-exp"> Cursando nivel terciario de la carrera Analista de Sistemas, 1er año. </h6></div>
+        <div class="col-12 py-3"> <input placeholder="Titulo" type="text" maxlength="20"></div>
 
-            <div class="col-sm-2"> <button class="btn btn-success">Editar</button> </div>
+        <div class="col-12"> <input type="text" placeholder="Descripción" maxlength="300" style="width: 100%;"> </div>
         
+        <div class="col-12 py-3"><input type="url" style="width: 30%;" placeholder="Url del logo de la empresa/organizacion"></div>
+
+        <div class="col-6 btn-editar"> <button class="btn btn-success">Editar</button> </div>
+        
+        <div class="col-6"> <button class="btn btn-danger">Eliminar</button> </div>
+        
+    </div>
+    <div class="row dec-row">
+        <div class="col-12 btn-item"> 
+            <button class="btn btn-success" (click)="nuevoItem()" >Nuevo Item</button> 
         </div>
-        <div class="row dec-row">
-            <div class="col-12"> 
-                <button class="btn btn-success">Nuevo Item</button> 
-            </div>
-        </div>
+    </div>
 
 </div>

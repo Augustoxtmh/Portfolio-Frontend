@@ -1,62 +1,8 @@
-.contenedor-banner {
-    border-radius: 10px;
-    padding-bottom: 15px;
-}
-
-#imagen {
-    max-width: 3rem;    
-}
-#bner {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    width: 100%;
-    border-start-end-radius: 10px;
-    border-top-left-radius: 10px;
-    max-height: 300px;
-}
-
-#foto_perf {
-    position: absolute fixed;
-    display: block;
-    z-index: 1;
-    width: 20%;
-    margin-top: -10%;
-}
-
-#presentacion {
-    text-align: center;
-    margin-top: -10%;
-}
 
 .contenedor-base{
     margin-top: 80px;
 }
 
-@media (max-width: 450px) {
-    #foto_perf {
-        position: relative;
-        display: none;
-    }
-    #presentacion {
-        margin-top: 0;
-    }
-    
-    .contenedor-banner {
-        border-radius: 0px;
-        padding-bottom: 0px;
-    }
-}
-@media (max-width: 500px) {
-
-    .contenedor-banner {
-        border-radius: 0px;
-        padding-bottom: 0px;
-    }
-}
-@media (max-width: 300px) {
-    .imagen {
-        display: none;
-    }
+.btn-editar{
+    text-align: center;
 }

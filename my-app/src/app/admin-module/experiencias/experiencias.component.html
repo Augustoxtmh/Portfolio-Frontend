@@ -2,18 +2,24 @@
 
     <h1 class="h1exp">Experiencias previas</h1>
 
-        <div class="row dec-row">
+    <div class="row dec-row" *ngFor="let item of items;">
         
-            <div class="col-2"> <img src="https://secure.meetupstatic.com/photos/event/4/c/b/b/600_468259643.jpeg" alt="Logo Experiencia" class="img-fluid"> </div>
-        
-            <div class="col-8"> <h5 class="h5-exp">FreeCodeCamp</h5> <h6 class="h6-exp"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic assumenda earum </h6></div>
+        <div class="col-12 py-3"> <input placeholder="Titulo" type="text" maxlength="20"></div>
 
-            <div class="col-sm-2"> <button class="btn btn-success">Editar</button> </div>
+        <div class="col-12"> <input type="text" placeholder="Descripción" maxlength="300" style="width: 100%;"> </div>
         
+        <div class="col-12 py-3"><input type="url" style="width: 30%;" placeholder="Url del logo de la empresa/organizacion"></div>
+
+        <div class="col-6 btn-editar"> <button class="btn btn-success">Editar</button> </div>
+        
+        <div class="col-6"> <button class="btn btn-danger">Eliminar</button> </div>
+        
+    </div>
+
+    <div class="row dec-row">
+        <div class="col-12 btn-item"> 
+            <button class="btn btn-success" (click)="nuevoItem()" >Nuevo Item</button> 
         </div>
-        <div class="row dec-row">
-            <div class="col-12"> 
-                <button class="btn btn-success">Nuevo Item</button> 
-            </div>
-        </div>
+    </div>
+
 </div>

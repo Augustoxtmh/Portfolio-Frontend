@@ -29,6 +29,14 @@
     text-align: center;
 }
 
+.btn-editar {
+    text-align: right;
+}
+
+.col-6{
+    margin-top: 20px;
+}
+
 @media (max-width: 190px) {
     #h1conocimiento{
         font-size: large;

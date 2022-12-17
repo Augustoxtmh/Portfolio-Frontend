@@ -15,6 +15,10 @@
     border-radius: 15px;
 }
 
+.btn-item{
+    text-align: center;
+}
+
 .row {
     width: 93%;
     margin: 4%;

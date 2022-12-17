@@ -8,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class EducacionComponent implements OnInit {
 
   constructor() { }
+  
+  items:number[] = [1] ; 
 
+  nuevoItem(){
+
+    this.items.push(1)
+
+  }
   ngOnInit() {
   }
 

@@ -9,6 +9,14 @@ export class ProyectosComponent implements OnInit {
 
   constructor() { }
 
+  items:number[] = [1] ; 
+
+  nuevoItem(){
+
+    this.items.push(1)
+
+  }
+
   ngOnInit() {
   }
 

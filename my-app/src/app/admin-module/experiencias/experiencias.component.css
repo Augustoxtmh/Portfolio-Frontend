@@ -1,6 +1,11 @@
-.col-12{
-    text-align: center;
+.col-6{
+    margin-top: 20px;
 }
+
+.btn-editar {
+    text-align: right;
+}
+
 
 @media (max-width: 250px) {
     .h1exp{
