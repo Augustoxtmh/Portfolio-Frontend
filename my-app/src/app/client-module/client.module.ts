@@ -9,13 +9,14 @@ import { ExperienciasComponent } from './experiencias/experiencias.component';
 import { HeaderComponent } from './header/header.component';
 import { ClientComponent } from './client.component';
 import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [ ProyectosComponent, ConocimientosComponent, EducacionComponent,
   PresentacionComponent, ExperienciasComponent, HeaderComponent, FooterComponent ,ClientComponent],
 
   imports: [
-    CommonModule
+    CommonModule, RouterModule
   ],
   exports:[
     ClientComponent, ProyectosComponent, ConocimientosComponent, EducacionComponent,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-contactar',
   templateUrl: './contactar.component.html',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactarComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor(private router:Router) { }
+
+  volverInicio(){
+    this.router.navigate([""]);
+  }
 
   ngOnInit() {
   }
