@@ -11,6 +11,7 @@
 
 .link:hover{
     background-color: rgb(115, 115, 115);
+    color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -21,9 +22,8 @@
     width: 100%;
 }
 
-#item-arg{
-    margin: 0;
-    color: rgb(255, 255, 255);
+.btn-group{
+    display: none;
 }
 
 .btn {
@@ -31,15 +31,20 @@
 }
 
 @media (max-width: 250px) {
-    #item-arg{
-        font-size: smaller;
-    }
     .btn {
         margin: 0;
     }
 }
-@media (max-width: 500px) {
-    .link{
+@media (max-width: 600px) {
+    .link {
+        color: black;
+    }
+    .desac{
         display: none;
+    }
+    .btn-group{
+        display:block;
+        position: fixed;
+        top: 5px;
     }
 }
