@@ -9,10 +9,13 @@ import { ExperienciasComponent } from './experiencias/experiencias.component';
 import { HeaderComponent } from './header/header.component';
 import { AdminComponent } from './admin.component';
 import { FooterComponent } from './footer/footer.component';
+import { CrearItemService } from './crear-item.service';
 
 @NgModule({
     declarations: [AdminComponent, ConocimientosComponent, EducacionComponent, PresentacionComponent, ExperienciasComponent,
       HeaderComponent, ProyectosComponent, FooterComponent],
+    
+    providers: [CrearItemService],
 
     imports: [
         CommonModule

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CrearItemService } from '../crear-item.service';
+import { Item } from '../item.model';
 
 @Component({
   selector: 'app-educacion-edit',
@@ -7,14 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducacionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private crearItem:CrearItemService) { }
   
-  items:number[] = [1] ; 
+  educacion:Item[] = [] ; 
 
   nuevoItem(){
 
-    this.items.push(1)
+    this.educacion.push(new Item())
 
+  }
+
+  eliminarCon(i:number){
+    
+    this.educacion.splice(i, 1)
+
+  }
+
+  actualizar(i:Item, titulo:string, descripcion:string, url:string){
+  
+    this.crearItem.actualizar(i, titulo, descripcion, url)
+    
   }
   ngOnInit() {
   }
