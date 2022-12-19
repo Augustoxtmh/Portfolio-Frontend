@@ -1,10 +1,10 @@
 footer li{
     display: inline-block;
+    align-items: center;
 }
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
     position: relative;
     bottom: 0; 
     margin-bottom: 0;
@@ -16,6 +16,13 @@ footer li{
     
 }
 
+#logo-arg-prog {
+    margin-right: 20px;
+    max-width: 250px;
+    width: 100%;
+    max-height: 100px;
+}
+
 .btn {
     margin: 0;
     color: white;
@@ -25,10 +32,14 @@ footer li{
     margin-right: 50px;
 }
 
-@media (max-width: 310px) {
+@media (max-width: 250px) {
     .btn{
         font-size: small;
     }
 }
 
-
+@media (max-width: 310px) {
+    .btn{
+        font-size: small;
+   }
+}

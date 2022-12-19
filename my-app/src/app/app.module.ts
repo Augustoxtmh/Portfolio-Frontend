@@ -11,11 +11,12 @@ import { Error404Component } from './error404/error404.component';
 import { ContactarComponent } from './contactar/contactar.component';
 import { DataService } from './data.service';
 import {HttpClientModule} from '@angular/common/http'
+
 @NgModule({
     declarations: [		
         AppComponent, LoginComponent,
         Error404Component, ContactarComponent
-   ],
+    ],
     providers: [DataService],
     bootstrap: [AppComponent],
     imports: [
