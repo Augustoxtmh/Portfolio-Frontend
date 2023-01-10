@@ -2,23 +2,23 @@
 
     <h1 id="h1conocimiento">Conocimientos (Estimaciónes)</h1>        
 
-    <div class="row dec-row" *ngFor="let item of conocimientos; index as i">
+    <div class="row dec-row">
     
-        <div class="col-12"> <input placeholder="{{item.conocimiento}}" #conocimientoNuevo type="text" maxlength="20"></div>
+        <div class="col-12"> <input placeholder="Conocimiento" #conocimientoNuevo type="text" maxlength="20"></div>
 
-        <div class="col-12 py-3"> <input placeholder="{{item.porcentaje}}" #porcentajeNuevo type="number"
+        <div class="col-12 py-3"> <input placeholder="Porcentaje" #porcentajeNuevo type="number"
             min=0 max=100 style="width: 189px;"></div>
         
 
-        <div class="col-6 btn-editar"> <button class="btn btn-success" (click)="actualizar(i, conocimientoNuevo.value, porcentajeNuevo.value)">Editar</button> </div>
-        <div class="col-6" style="text-align: left;"> <button class="btn btn-danger" (click)="eliminarCon(i)">Eliminar</button> </div>
+        <div class="col-6 btn-editar"> <button class="btn btn-success">Editar</button> </div>
+        <div class="col-6" style="text-align: left;"> <button class="btn btn-danger">Eliminar</button> </div>
         
     </div>
 
 
     <div class="row dec-row">
         <div class="col-12"> 
-            <button class="btn btn-success" (click)="nuevoItem()">Nuevo Item</button> 
+            <button class="btn btn-success">Nuevo Item</button> 
         </div>
     </div>
 </div>
