@@ -1,12 +1,14 @@
 <div class="bord_exp contenedor-base contenedor-exp">
     <h1 class="h1exp" id="educacion">Educación, cursos, etc.</h1>
 
+    <div *ngFor="let edu of Educaciones">   
         <div class="row dec-row">
+
+            <div class="col-2"> <img src={{edu.url}} alt="Logo Educación" class="img-fluid"></div>
         
-            <div class="col-2"> <img src="https://static.acaula.com.ar/center/AR/1328-instituto-argentino-de-estudios-superiores-iaes-9a28a03e-7797-4fc3-a1f2-8e7bdda79d1a-logo-200x200.png" alt="Logo Educación" class="img-fluid"></div>
-            
-            <div class="col-10"> <h5 class="h5-exp">IAES</h5> <h6 class="h6-exp"> Cursando nivel terciario de la carrera Analista de Sistemas, 1er año. </h6></div>
+            <div class="col-10"> <h5 class="h5-exp">{{edu.titulo}}</h5> <h6 class="h6-exp"> {{edu.descripcion}} </h6></div>
         
         </div>
+    </div>
 
 </div>

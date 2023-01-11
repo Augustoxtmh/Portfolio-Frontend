@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Presentacion } from 'src/app/model/presentacion.model';
+import { PresentacionService } from 'src/app/service/presentacion.service';
 
 @Component({
   selector: 'app-presentacion',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./presentacion.component.css']
 })
 export class PresentacionComponent implements OnInit {
+  presen: Presentacion = new Presentacion("", "", "", "");
 
-  constructor() { }
+  constructor(public presentacionService: PresentacionService) { }
 
   ngOnInit() {
+    this.presentacionService.getPresentacion().subscribe(data => {this.presen = data} )
   }
 
 }

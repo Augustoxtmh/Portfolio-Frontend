@@ -3,11 +3,10 @@
     text-align: left;
     text-align: justify;
     padding-left: 5%;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
-.proy-boton {
-    background-color: burlywood;
-    border: 1px solid;
-    border-radius: 7px;
-    margin-bottom: 7.5%;
-    
+a{
+    text-decoration: none;
 }

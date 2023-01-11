@@ -13,10 +13,10 @@ import { DataService } from './data.service';
 import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
-    declarations: [		
+    declarations: [			
         AppComponent, LoginComponent,
-        Error404Component, ContactarComponent
-    ],
+        Error404Component, ContactarComponent,
+   ],
     providers: [DataService],
     bootstrap: [AppComponent],
     imports: [

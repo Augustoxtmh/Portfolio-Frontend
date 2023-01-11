@@ -1,11 +1,13 @@
 <div class="bord_exp contenedor-base contenedor-exp" id="conocimientos">
 
-    <h1 id="h1conocimiento">Conocimientos (Estimaciónes)</h1>        
-    <div class="cont-con">
-        <div class="progress">
-            <div class="progress-bar" style="width: 75%;">
-                <span class="progress-bar-text"> HTML: 75%</span>
+    <h1 id="h1conocimiento">Conocimientos (Estimaciónes)</h1>     
+    <div *ngFor="let cono of conocimientos;">
+        <div class="cont-con">
+            <div class="progress">
+                <div class="progress-bar" [ngStyle]="{'width.%': cono.porcentaje}">
+                    <span class="progress-bar-text"> {{cono.conocimiento}}</span>
+                </div>
             </div>
         </div>
-    </div>
+    </div>   
 </div>

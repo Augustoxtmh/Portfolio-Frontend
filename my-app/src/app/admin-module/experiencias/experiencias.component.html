@@ -1,26 +1,24 @@
 <div class="bord_exp contenedor-base contenedor-exp" id ="experiencia">
 
     <h1 class="h1exp">Experiencias previas</h1>
+    <div *ngFor="let exp of experiencias;let i = index;">    
 
-    <div class="row dec-row" >
+        <div class="row dec-row">
         
-        <div class="col-12 py-3"> <input placeholder="Titulo" #titulo type="text" maxlength="50"></div>
+        <div class="col-12 py-3"> <input placeholder={{exp.titulo}} #titulo type="text" maxlength="50"></div>
 
-        <div class="col-12"> <input type="text" placeholder="Descripcion" #descripcion maxlength="300" style="width: 100%;"> </div>
+        <div class="col-12"> <input type="text" placeholder={{exp.descripcion}} #descripcion maxlength="300" style="width: 100%;"> </div>
         
-        <div class="col-12 py-3"><input type="url" style="width: 30%;" placeholder="url" #url></div>
+        <div class="col-12 py-3"><input type="url" style="width: 100%;" placeholder={{exp.url}} #url></div>
 
-        <div class="col-6 btn-editar"> <button class="btn btn-success"></button>
-        
-        <div class="col-6"> <button class="btn btn-danger" >Eliminar</button> </div>
+        <div class="col-6 btn-editar"> <button class="btn btn-success" type="submit">Editar</button> </div>
+        <div class="col-6" style="text-align: left;"> <button class="btn btn-danger">Eliminar</button> </div>
         
     </div>
     <div class="row dec-row">
         <div class="col-12 btn-item"> 
-            <button class="btn btn-success"  >Nuevo Item</button> 
+            <button class="btn btn-success">Nuevo Item</button> 
         </div>
     </div>
 
 </div>
-    
-

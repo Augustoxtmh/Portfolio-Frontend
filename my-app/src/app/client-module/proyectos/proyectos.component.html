@@ -1,11 +1,14 @@
 <div class="bord_exp contenedor-base contenedor-exp" id="proyectos">
   <!--Zona Proyectos-->
   <h1 class="h1exp">Proyectos</h1>
-  <div class="proy-cont">
-      <h4>Portfolio Web</h4>
+  <div *ngFor="let proy of proyectos">     
+    <a href={{proy.url}}>
+      <div class="proy-cont">
+        
+        <h4>{{proy.titulo}}</h4>
 
-      <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero laborum harum neque quaerat ea illo fuga animi in rem molestias beatae numquam at velit, esse sit repellat assumenda est. Nisi.</h6>
+        <h6>{{proy.descripcion}}</h6>
 
-      <button class="proy-boton">Visitar</button>
-  </div>
+      </div>
+    </a>
 </div>
