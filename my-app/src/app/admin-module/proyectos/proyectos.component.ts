@@ -18,7 +18,7 @@ export class ProyectosComponent implements OnInit {
   }
 
   newProy(){
-    const proy = new Proyecto("Titulo", "Descripcion", "Url de la Imagen");
+    const proy = new Proyecto("Titulo", "Descripcion", "Url del proyecto");
     this.ProyectoService.createProyecto(proy).subscribe(data => {
       alert("Proyecto Creado")
       window.location.reload();
