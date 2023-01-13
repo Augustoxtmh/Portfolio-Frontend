@@ -9,7 +9,7 @@ import { TokenService } from './token.service';
   providedIn: 'root'
 })
 export class PresentacionService {
-  url = "http://localhost:8080/Presentacion"
+  url = "https://portfolio-backend-lj8r.onrender.com/Presentacion"
   constructor(private http: HttpClient,private tokenService: TokenService) { }
 
   public getPresentacion(): Observable<Presentacion>{
