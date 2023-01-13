@@ -6,13 +6,8 @@ Tecnologias usadas:
 
 * HTML
 * CSS 
-* JAVA
 * Angular
-* Springboot
-* mySQL
 
 Caracteristicas:
 
-* Validacion con JWT
-* CRUD simple
 * Responsive
