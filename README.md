@@ -1,9 +1,10 @@
 # Portfolio-Frontend
 
-Portfolio Web creado para el curso de Argentina Programa
+Frontend del Portfolio Web creado como projecto final para el curso de Argentina Programa
 
 Tecnologias usadas:
 
+* Firebase
 * HTML
 * CSS 
 * Angular
