@@ -13,6 +13,6 @@ Tecnologias usadas:
 
 Caracteristicas:
 
-Validacion con JWT
-CRUD simple
-Responsive
+* Validacion con JWT
+* CRUD simple
+* Responsive
