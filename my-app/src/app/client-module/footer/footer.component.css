@@ -11,6 +11,11 @@ footer li{
     width: 100%; 
 }
 
+#correo{
+    color: rgb(171, 171, 171);
+    text-decoration: none;
+}
+
 .btn:hover{
     background-color: rgb(72, 72, 72);
     
@@ -26,10 +31,6 @@ footer li{
 .btn {
     margin: 0;
     color: white;
-}
-
-.btn-contact{
-    margin-right: 50px;
 }
 
 @media (max-width: 250px) {

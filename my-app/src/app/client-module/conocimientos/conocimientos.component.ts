@@ -10,7 +10,7 @@ import { ConocimientoService } from 'src/app/service/conocimiento.service';
 export class ConocimientosComponent implements OnInit {
   conocimientos: Conocimiento[] = [];
 
-  constructor(public conocimientoService: ConocimientoService) { }
+  constructor(private conocimientoService: ConocimientoService) { }
 
   ngOnInit() {
     this.conocimientoService.getConocimiento().subscribe(data => {this.conocimientos = data} )

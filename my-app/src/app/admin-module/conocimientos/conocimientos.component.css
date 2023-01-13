@@ -27,10 +27,11 @@
 
 .col-12{
     text-align: center;
+    margin-left: 5px;
 }
 
 .btn-editar {
-    text-align: right;
+    margin-bottom: 15px;
 }
 
 .col-6{

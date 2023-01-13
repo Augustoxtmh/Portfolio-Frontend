@@ -8,12 +8,15 @@ import { PresentacionService } from 'src/app/service/presentacion.service';
   styleUrls: ['./presentacion.component.css']
 })
 export class PresentacionComponent implements OnInit {
-  presen: Presentacion = new Presentacion("", "", "", "");
+  presen: Presentacion = new Presentacion("", "", "");
+  presenCargada = false;
 
-  constructor(public presentacionService: PresentacionService) { }
+  constructor(private presentacionService: PresentacionService) { }
 
   ngOnInit() {
-    this.presentacionService.getPresentacion().subscribe(data => {this.presen = data} )
-  }
+    this.presentacionService.getPresentacion().subscribe(data => {
+      this.presen = data;
+      this.presenCargada= true;
+    });  }
 
 }

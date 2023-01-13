@@ -4,7 +4,7 @@
 }
 
 #imagen {
-    max-width: 3rem;    
+    max-width: 4rem;    
 }
 #bner {
     background-repeat: no-repeat;
@@ -22,11 +22,13 @@
     display: block;
     z-index: 1;
     width: 20%;
+    border-radius: 100px;
+    margin-left: 8%;
     margin-top: -10%;
 }
 
 #presentacion {
-    text-align: center;
+    text-align: right;
     margin-top: -10%;
 }
 
@@ -41,6 +43,8 @@
     }
     #presentacion {
         margin-top: 0;
+        margin-left: 0;
+        text-align: center;
     }
     
     .contenedor-banner {

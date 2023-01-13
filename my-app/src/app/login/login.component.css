@@ -13,4 +13,7 @@ body{
 #formulario{
     margin-top: 10%;
     color: rgb(255, 255, 255);
+    width: 50%;
+    align-items: center;
+    margin-left: 25%;
 }

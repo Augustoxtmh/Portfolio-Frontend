@@ -1,26 +1,30 @@
 <div class="bord_exp contenedor-base contenedor-exp" id="proyectos">
     <!--Zona Proyectos-->
     <h1 class="h1exp">Proyectos</h1>
-    <div class="proy-cont">
-        
-        <div class="row dec-row" >
-        
-            <div class="col-12 py-3"> <input placeholder="Titulo" #titulo type="text" maxlength="50"></div>
-    
-            <div class="col-12"> <input type="text" placeholder="Descripcion" #descripcion maxlength="300" style="width: 100%;"> </div>
-            
-            <div class="col-12 py-3"><input type="url" style="width: 30%;" placeholder="url" #url></div>
-    
-            <div class="col-6 btn-editar"> <button class="btn btn-success"></button>
-            
-            <div class="col-6"> <button class="btn btn-danger" >Eliminar</button> </div>
-            
-        </div>
+    <div class="proy-cont" *ngFor="let proy of proyectos;let i = index;">    
         <div class="row dec-row">
-            <div class="col-12 btn-item"> 
-                <button class="btn btn-success"  >Nuevo Item</button> 
-            </div>
-        </div>
-    </div>  
+            <form (ngSubmit)="saveProy(proy)">
+                    <div class="col-12 py-3"> <input placeholder="Titulo" type="text" maxlength="50" 
+                        id="titulo" name="titulo" [(ngModel)]="proy.titulo" required></div>
 
-  </div>
+                    <div class="col-12"> <input type="text" placeholder="Descripcion" id="descripcion" name="descripcion" 
+                        [(ngModel)]="proy.descripcion" maxlength="300" style="width: 100%;"> </div>
+                    
+                    <div class="col-12 py-3"><input type="text" id="url" name="url" 
+                        [(ngModel)]="proy.url" style="width: 100%;" placeholder="Url proyecto" ></div>
+
+                    <div class="col-12" style="text-align: center;"> <button class="btn btn-success btn-editar" type="submit">Editar</button> </div>
+            </form>
+
+            <div class="col-12" style="text-align: center;"> <button class="btn btn-danger" (click)="deleteProy(proy.id)">Eliminar</button> </div>
+        </div>
+    </div>
+  
+  <div class="row dec-row">
+
+        <div class="col-12 btn-item">
+            <button class="btn btn-success" (click)="newProy()">Nuevo Item</button> 
+
+        </div>
+    </div>
+</div>

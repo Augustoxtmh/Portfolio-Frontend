@@ -1,16 +1,35 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
-import { Experiencia } from '../model/experiencia.model';
+import { Proyecto } from '../model/proyecto.model';
+import { TokenService } from './token.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProyectoService {
   url = "http://localhost:8080/Proyecto"
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private tokenService: TokenService) { }
 
-  public getExperiencia(): Observable<Experiencia[]>{
-    return this.http.get<Experiencia[]>(this.url);
+  public getProyecto(): Observable<Proyecto[]>{
+    return this.http.get<Proyecto[]>(this.url);
+  }
+  public updateProyecto(Proyecto: Proyecto): Observable<any>{
+    
+    return this.http.put<any>(this.url + '/Actualizar', Proyecto, {
+      headers: new HttpHeaders().set('Authorization', 'Bearer ' + this.tokenService.getToken())
+    });
+  }
+
+  public createProyecto(Proyecto: Proyecto): Observable<any>{
+    return this.http.post<any>(this.url + '/Crear', Proyecto, {
+      headers: new HttpHeaders().set('Authorization', 'Bearer ' + this.tokenService.getToken())
+    });
+  }
+
+  public deleteProyecto(id: Number): Observable<any>{
+    return this.http.delete(this.url + `/Borrar/${id}`, {
+      headers: new HttpHeaders().set('Authorization', 'Bearer ' + this.tokenService.getToken())
+    });
   }
 }

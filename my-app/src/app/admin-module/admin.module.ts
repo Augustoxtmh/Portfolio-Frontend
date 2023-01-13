@@ -9,6 +9,7 @@ import { ExperienciasComponent } from './experiencias/experiencias.component';
 import { HeaderComponent } from './header/header.component';
 import { AdminComponent } from './admin.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [AdminComponent, ConocimientosComponent, EducacionComponent, PresentacionComponent, ExperienciasComponent,
@@ -17,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
     providers: [],
 
     imports: [
-        CommonModule
+        CommonModule, FormsModule
     ],
     exports:[
       AdminComponent, ConocimientosComponent, EducacionComponent, PresentacionComponent, ExperienciasComponent,

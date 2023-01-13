@@ -10,10 +10,10 @@ import { ProyectoService } from 'src/app/service/proyecto.service';
 export class ProyectosComponent implements OnInit {
   proyectos: Proyecto[] = [];
 
-  constructor(public proyectoService: ProyectoService) { }
+  constructor(private proyectoService: ProyectoService) { }
 
   ngOnInit() {
-    this.proyectoService.getExperiencia().subscribe(data => {this.proyectos = data} )
+    this.proyectoService.getProyecto().subscribe(data => {this.proyectos = data} )
   }
 
 }

@@ -11,7 +11,7 @@ export class ExperienciasComponent implements OnInit {
 
   experiencias: Experiencia[] = [];
 
-  constructor(public experienciaService: ExperienciaService) { }
+  constructor(private experienciaService: ExperienciaService) { }
 
   ngOnInit() {
     this.experienciaService.getExperiencia().subscribe(data => {this.experiencias = data} )

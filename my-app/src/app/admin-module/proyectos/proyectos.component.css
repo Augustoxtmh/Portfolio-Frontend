@@ -1,11 +1,10 @@
 .proy-cont {
-    width: 95%;
+    width: 100%;
     text-align: left;
     text-align: justify;
-    padding-left: 5%;
 }
 
 .btn-editar {
-    text-align: right;
+    margin-bottom: 15px;
 }
 

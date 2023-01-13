@@ -11,7 +11,7 @@ import { EducacionService } from 'src/app/service/educacion.service';
 export class EducacionComponent implements OnInit {
   Educaciones: Educacion[] = [];
 
-  constructor(public EducacionService: EducacionService) { }
+  constructor(private EducacionService: EducacionService) { }
 
   ngOnInit() {
     this.EducacionService.getEducacion().subscribe(data => {this.Educaciones = data} )
