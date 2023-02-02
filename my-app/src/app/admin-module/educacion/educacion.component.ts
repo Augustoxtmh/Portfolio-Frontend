@@ -17,7 +17,7 @@ export class EducacionComponent implements OnInit {
   }
 
   newEdu(){
-    const edu = new Educacion("Titulo", "Descripcion", "Url de la Imagen");
+    const edu = new Educacion("Titulo", "Descripcion", "Fecha Inicio-Fin", "Url de la Imagen");
     this.EducacionService.createEducacion(edu).subscribe(data => {
       alert("Educacion Creada")
       window.location.reload();

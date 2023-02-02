@@ -5,7 +5,11 @@
         <div class="row dec-row" >
             <form (ngSubmit)="saveEdu(edu)">
                     <div class="col-12 py-3"> <input placeholder="Titulo" type="text" maxlength="50" 
-                        id="titulo" name="titulo" [(ngModel)]="edu.titulo" required></div>
+                        id="titulo" name="titulo" style="margin-right: 10%;" [(ngModel)]="edu.titulo" required>
+
+                        <input placeholder="Fecha" type="text" maxlength="50" 
+                        id="fecha" name="fecha" [(ngModel)]="edu.fecha" required>
+                    </div>
 
                     <div class="col-12"> <input type="text" placeholder="Descripcion" id="descripcion" name="descripcion" 
                         [(ngModel)]="edu.descripcion" maxlength="300" style="width: 100%;"> </div>

@@ -19,7 +19,7 @@ export class ExperienciasComponent implements OnInit {
   }
 
   newExp(){
-    const exp = new Experiencia("Titulo", "Descripcion", "Url de la Imagen");
+    const exp = new Experiencia("Titulo", "Descripcion", "Fecha Inicio-Fin", "Url de la Imagen");
     this.experienciaService.createExperiencia(exp).subscribe(data => {
       alert("Experiencia Creada")
       window.location.reload();
