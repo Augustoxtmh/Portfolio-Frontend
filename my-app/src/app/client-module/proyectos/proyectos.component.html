@@ -1,0 +1,14 @@
+<div class="bord_exp contenedor-base contenedor-exp" id="proyectos">
+  <!--Zona Proyectos-->
+  <h1 class="h1exp">Proyectos</h1>
+  <div *ngFor="let proy of proyectos">     
+    <a href={{proy.url}} Target="_blank">
+      <div class="proy-cont">
+        
+        <h4>{{proy.titulo}}</h4>
+
+        <h6>{{proy.descripcion}}</h6>
+
+      </div>
+    </a>
+</div>

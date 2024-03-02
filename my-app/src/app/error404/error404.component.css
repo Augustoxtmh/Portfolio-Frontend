@@ -1,0 +1,15 @@
+.btn-primary{
+    margin-top: 30px;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.contenedor {
+    width: 100%;
+
+}

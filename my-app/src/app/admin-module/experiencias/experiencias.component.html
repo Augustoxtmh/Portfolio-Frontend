@@ -1,0 +1,35 @@
+<div class="bord_exp contenedor-base contenedor-exp" id ="experiencia">
+
+    <h1 class="h1exp">Experiencias previas</h1>
+    
+    <div *ngFor="let exp of experiencias;let i = index;">    
+        <div class="row dec-row" >
+            <form (ngSubmit)="saveExp(exp)">
+                    <div class="col-12 py-3"> <input placeholder="Titulo" type="text" maxlength="50" 
+                        id="titulo" name="titulo" style="margin-right: 10%;" [(ngModel)]="exp.titulo" required>
+
+                        <input placeholder="Fecha Inicio-Fin" type="text" maxlength="80" 
+                        id="fecha" name="fecha" [(ngModel)]="exp.fecha" required>
+                    </div>
+
+                    <div class="col-12"> <input type="text" placeholder="Descripcion" id="descripcion" name="descripcion" 
+                        [(ngModel)]="exp.descripcion" maxlength="300" style="width: 100%;"> </div>
+                    
+                    <div class="col-12 py-3"><input type="text" id="url" name="url" 
+                        [(ngModel)]="exp.url" style="width: 100%;" placeholder="Url imagen experiencia" ></div>
+
+                    <div class="col-12" style="text-align: center;"> <button class="btn btn-success btn-editar" type="submit">Editar</button> </div>
+            </form>
+
+            <div class="col-12" style="text-align: center;"> <button class="btn btn-danger" (click)="deleteExp(exp.id)">Eliminar</button> </div>
+        </div>
+    </div>
+
+    <div class="row dec-row">
+        <div class="col-12 btn-item">
+            
+            <button class="btn btn-success" (click)="newExp()">Nuevo Item</button> 
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+
+<div class="contenedor-banner contenedor-base" id="inicio" *ngIf="presenCargada">
+    <form (ngSubmit)="savePresen()">
+        <div class="py-3 px-3"><input placeholder="Url del Banner" type="text" style="width: 100%;"
+          id="url_Banner" name="url_Banner" [(ngModel)]="presen.url_Banner" required></div>
+        
+        <div class="py-3 px-3"><input placeholder={{presen.nombre}} type="text" maxlength="30" style="width: 30%;"
+          id="Nombre" name="Nombre" [(ngModel)]="presen.nombre" required></div>
+
+        <div class="py-3 px-3"><input placeholder={{presen.descripcion}} type="text" maxlength="100" style="width: 80%;"
+          id="descripcion" name="descripcion" [(ngModel)]="presen.descripcion" required></div>
+        
+        <div class="btn-editar py-3"> <button class="btn btn-success" type="submit">Actualizar</button></div>
+    </form>
+</div>
+

@@ -1,0 +1,35 @@
+<div class="bord_exp contenedor-base contenedor-exp" id="educacion">
+    <h1 class="h1exp">Educación recibida</h1>
+
+    <div *ngFor="let edu of educaciones;let i = index;">    
+        <div class="row dec-row" >
+            <form (ngSubmit)="saveEdu(edu)">
+                    <div class="col-12 py-3"> <input placeholder="Titulo" type="text" maxlength="50" 
+                        id="titulo" name="titulo" style="margin-right: 10%;" [(ngModel)]="edu.titulo" required>
+
+                        <input placeholder="Fecha" type="text" maxlength="50" 
+                        id="fecha" name="fecha" [(ngModel)]="edu.fecha" required>
+                    </div>
+
+                    <div class="col-12"> <input type="text" placeholder="Descripcion" id="descripcion" name="descripcion" 
+                        [(ngModel)]="edu.descripcion" maxlength="300" style="width: 100%;"> </div>
+                    
+                    <div class="col-12 py-3"><input type="text" id="url" name="url" 
+                        [(ngModel)]="edu.url" style="width: 100%;" placeholder="Url imagen educacion" ></div>
+
+                    <div class="col-12" style="text-align: center;"> <button class="btn btn-success btn-editar" type="submit">Editar</button> </div>
+            </form>
+
+            <div class="col-12" style="text-align: center;"> <button class="btn btn-danger" (click)="deleteEdu(edu.id)">Eliminar</button> </div>
+    
+        </div>
+    </div>
+
+    <div class="row dec-row">
+        <div class="col-12 btn-item">
+            
+            <button class="btn btn-success" (click)="newEdu()">Nuevo Item</button> 
+
+        </div>
+    </div>
+</div>

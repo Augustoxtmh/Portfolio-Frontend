@@ -1,0 +1,30 @@
+<div class="bord_exp contenedor-base contenedor-exp" id="conocimientos">
+
+    <h1 id="h1conocimiento">Conocimientos (Estimaciónes)</h1>        
+
+    <div *ngFor="let cono of conocimientos;let i = index;">    
+        <div class="row dec-row" >
+            <form (ngSubmit)="saveCono(cono)">
+    
+                <div class="col-12"> <input placeholder="Conocimiento" type="text" maxlength="30"
+                    id="conocimiento" name="conocimiento" [(ngModel)]="cono.conocimiento" required></div>
+
+                <div class="col-12 py-3"> <input type="number" placeholder="Porcentaje" id="porcentaje" name="porcentaje"
+                     type="number" min=0 max=100 [(ngModel)]="cono.porcentaje" style="width: 189px;" required></div>
+                
+
+                <div class="col-12" style="text-align: center;"> <button class="btn btn-success btn-editar" type="submit">Editar</button> </div>
+
+            </form>
+
+            <div class="col-12" style="text-align: center;"> <button class="btn btn-danger" (click)="deleteCono(cono.id)">Eliminar</button> </div>
+       </div>
+    </div>
+    <div class="row dec-row">
+        <div class="col-12 btn-item">
+            
+            <button class="btn btn-success" (click)="newCono()">Nuevo Item</button> 
+    
+        </div>
+    </div>
+</div>
